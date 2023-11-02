@@ -5,7 +5,7 @@ pipeline {
       args '-v /root/.m2:/root/.m2'
     }
     stages {
-      stage ('build') {
+      stage('build') {
         steps {
           sh 'mvn -B -DskipTests clean package'
         }
